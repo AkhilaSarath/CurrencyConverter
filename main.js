@@ -12,8 +12,7 @@ var requestOptions = {
   headers: myHeaders
 };
 
-fetch(`https://data.fixer.io/api/symbols
-    ?access_key =apikey`, requestOptions)
+fetch(`https://data.fixer.io/api/symbols?access_key=apikey`, requestOptions)
   .then(response => response.json())
   .then(data => displayData(data))
   .catch(error => console.log('error', error));
